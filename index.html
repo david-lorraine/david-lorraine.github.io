@@ -15,7 +15,9 @@
       var text = new XMLHttpRequest();
       text.open('GET', './powershell/security_protocols.ps1', true);
       text.send(null);
-      document.getElementById('security_protocols.ps1').innerText = text.responseText;
+      text.onreadystatechange = function () {
+        document.getElementById('security_protocols.ps1').innerText = text.responseText;
+      }
     </script>
   </body>
 </html>
