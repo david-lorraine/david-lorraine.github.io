@@ -11,18 +11,30 @@
     </div>
     
     <script>
-      var xmlhttp = new XMLHttpRequest();
-      xmlhttp.onreadystatechange = function() {
+      var xmlhttpjson = new XMLHttpRequest();
+      var xmlhttpcode = new XMLHttpRequest();
+      
+      xmlhttpjson.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
           var data = JSON.parse(this.responseText);
           for (record in data) {
             document.getElementById("CodeBody").innerHTML += "<h2>" + data[record].Header + "</h2><h3>" + data[record].Description + "</h3>";
             document.getElementById("CodeBody").innerHTML += "<div id=\x22" + record + "\x22></div>";
+            xmlhttpjson.open("GET", data[record].Source, true);
+            xmlhttpjson.send(); 
           }
         }
       }
-      xmlhttp.open("GET", "powershell.json", true);
-      xmlhttp.send(); 
+      
+      xmlhttpcode.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          var code = JSON.parse(this.responseText);
+          document.getElementById(record).innerText = code.responseText;
+        }
+      }
+      
+      xmlhttpjson.open("GET", "powershell.json", true);
+      xmlhttpjson.send(); 
     </script>
   </body>
 </html>
