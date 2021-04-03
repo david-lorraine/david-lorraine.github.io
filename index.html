@@ -34,7 +34,11 @@
       }
       
       xmlhttpjson.open("GET", "powershell.json", true);
-      xmlhttpjson.send(); 
+      xmlhttpjson.send();
+      
+      function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+      }
     </script>
   </body>
 </html>
