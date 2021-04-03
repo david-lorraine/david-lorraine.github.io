@@ -3,5 +3,10 @@
     "Header":  "Setting the security protocols of PowerShell",
     "Description":  "How to get and set the security protocol type for web requests",
     "Source":  "./powershell/security_protocols.ps1"
+  },
+  {
+    "Header":  "This is a second entry for testing the web page Javascript",
+    "Description":  "Yes the is the same PowerShell script!",
+    "Source":  "./powershell/security_protocols.ps1"
   }
 ]
