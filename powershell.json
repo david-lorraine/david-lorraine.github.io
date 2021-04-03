@@ -1,0 +1,7 @@
+[
+  {
+    "Header":  "Setting the security protocols of PowerShell",
+    "Description":  "How to get and set the security protocol type for web requests",
+    "Source":  "./powershell/security_protocols.ps1"
+  }
+]
