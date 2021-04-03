@@ -6,7 +6,7 @@
   },
   {
     "Header":  "This is a second entry for testing the web page Javascript",
-    "Description":  "Yes the is the same PowerShell script!",
+    "Description":  "Yes this the same PowerShell script!",
     "Source":  "./powershell/security_protocols.ps1"
   }
 ]
