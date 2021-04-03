@@ -6,18 +6,20 @@
   <body>
     <h1>Hello World</h1>
     <p>This web site is primarily for myself, so I do have to keep search my files and online for code I have already written/used.</p>
-    <h2>Setting the security protocols of PowerShell</h2>
     
-    <div id="security_protocols.ps1">
+    <div id="CodeBody">
     </div>
     
     <script>
-      var text = new XMLHttpRequest();
-      text.open('GET', './powershell/security_protocols.ps1', true);
-      text.send(null);
-      text.onreadystatechange = function () {
-        document.getElementById('security_protocols.ps1').innerText = text.responseText;
-      }
+      var = xmlhtml = new XMLHttpRequest();
+      xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          var data = JSON.parse(this.responseText);
+          for (record in data) {
+            document.getElementById("CodeBody").innerHTML += "<h2>" + data[record].Header + "</h2><h3>" + data[record].Description + "</h3>";
+            document.getElementById("CodeBody").innerHTML += "<div id=\x22" + record + "\x22></div>";
+        }
+      }   
     </script>
   </body>
 </html>
