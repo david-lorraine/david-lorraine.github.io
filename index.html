@@ -21,7 +21,8 @@
             document.getElementById("CodeBody").innerHTML += "<h2>" + data[record].Header + "</h2><h3>" + data[record].Description + "</h3>";
             document.getElementById("CodeBody").innerHTML += "<div id=\x22" + record + "\x22></div>";
             xmlhttpcode.open("GET", data[record].Source, true);
-            xmlhttpcode.send(); 
+            xmlhttpcode.send();
+            sleep(1000);
           }
         }
       }
