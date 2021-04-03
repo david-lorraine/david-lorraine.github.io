@@ -20,12 +20,9 @@
           for (record in data) {
             document.getElementById("CodeBody").innerHTML += "<h2>" + data[record].Header + "</h2><h3>" + data[record].Description + "</h3>";
             document.getElementById("CodeBody").innerHTML += "<div id=\x22" + record + "\x22></div>";
-            var wait = true;
-            xmlhttpcode.open("GET", data[record].Source, true);
+
+            xmlhttpcode.open("GET", data[record].Source, false);
             xmlhttpcode.send();
-            while (wait) {
-              console.log("Loading "+record);
-            }
           }
         }
       }
@@ -33,7 +30,6 @@
       xmlhttpcode.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
           document.getElementById(record).innerText = this.responseText;
-          var wait = false;
         }
       }
       
