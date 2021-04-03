@@ -20,7 +20,9 @@
             document.getElementById("CodeBody").innerHTML += "<div id=\x22" + record + "\x22></div>";
           }
         }
-      }   
+      }
+      xmlhttp.open("GET", "powershell.json", true);
+      xmlhttp.send(); 
     </script>
   </body>
 </html>
