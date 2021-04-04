@@ -19,7 +19,7 @@
         if (this.readyState == 4 && this.status == 200) {
           var data = JSON.parse(this.responseText);
           for (record in data) {
-            document.getElementById("CodeBody").innerHTML += "<h2>" + data[record].Header + "</h2><h3>" + data[record].Description + "</h3>";
+            document.getElementById("CodeBody").innerHTML += "<p>" + data[record].Header + "</h2><h3>" + data[record].Description + "</p>";
             document.getElementById("CodeBody").innerHTML += "<div id=\x22" + record + "\x22 class=\x22code\x22></div>";
             document.getElementById("CodeBody").innerHTML += "<p class=\x22code\x22><a href=\x22" + data[record].Source + "\x22>Download</a></p>"
 
