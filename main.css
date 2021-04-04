@@ -1,0 +1,21 @@
+body {
+  background-color: #696969;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+h1 {
+  text-shadow: 5px 5px 5px black;
+}
+
+div.code {
+  background-color: black;
+  color: lime;
+  font-family: "Lucida Console", monospace, "Courier New", Courier;
+  margin: 10px;
+  border-left-style: solid;
+  border-width: 5px;
+  padding: 10px;
+  line-height: 1.25;
+}
