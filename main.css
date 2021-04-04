@@ -19,3 +19,14 @@ div.code {
   padding: 10px;
   line-height: 1.25;
 }
+
+p.code {
+  text-align: right;
+  margin: 10px;
+}
+
+a {text-decoration: none;}
+a:link {color: lime;}
+a:visited {color: lime;}
+a:hover {color: white;}
+a:active {color: black;} 
