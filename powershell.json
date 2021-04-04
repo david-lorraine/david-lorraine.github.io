@@ -5,8 +5,8 @@
     "Source":  "./powershell/security_protocols.ps1"
   },
   {
-    "Header":  "This is a second entry for testing the web page Javascript",
-    "Description":  "Yes this the same PowerShell script!",
-    "Source":  "./powershell/security_protocols.ps1"
+    "Header":  "Finding your external internet protocol address",
+    "Description":  "This PowerShell command use a JSON file file hosted at api.myip.com\r\nPlease visit www.myip.com for more information",
+    "Source":  "./powershell/display_external_ip.ps1"
   }
 ]
