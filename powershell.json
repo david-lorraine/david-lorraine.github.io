@@ -6,7 +6,7 @@
   },
   {
     "Header":  "Finding your external internet protocol address",
-    "Description":  "This PowerShell command use a JSON file file hosted at api.myip.com\r\nPlease visit www.myip.com for more information",
+    "Description":  "This PowerShell command use a JSON file file hosted at api.myip.com\u003cbr\u003ePlease visit \u003ca href=\"https://www.myip.com\"\u003ewww.myip.com\u003c/a\u003e for more information",
     "Source":  "./powershell/display_external_ip.ps1"
   }
 ]
